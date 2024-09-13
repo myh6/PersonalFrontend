@@ -57,3 +57,18 @@ nav ul {
     padding: 1rem;
     background-color: #d8a7e0;
 }
+
+.primary-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.primary-nav a {
+    display: block;
+    padding: 1rem;
+}
+
+.primary-nav a:hover {
+    background-color: #4b0082;
+    color: white;
+}
