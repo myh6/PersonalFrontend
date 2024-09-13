@@ -31,6 +31,12 @@ nav ul {
     border-right: 1px solid black;
 }
 
+.local-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 #homepage main {
     grid-area: main;
     padding-left: 1rem;
