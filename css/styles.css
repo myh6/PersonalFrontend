@@ -13,7 +13,7 @@ nav ul {
 .menu {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #homepage {
