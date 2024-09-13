@@ -34,6 +34,7 @@ nav ul {
 .local-menu ul {
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
     gap: 2rem;
 }
 
