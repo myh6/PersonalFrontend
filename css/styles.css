@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
