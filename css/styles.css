@@ -35,6 +35,7 @@ nav ul {
     grid-area: local-menu;
     border-right: 1px solid black;
     background-color: #f4c2c2;
+    padding-right: 1rem;
 }
 
 .local-menu ul {
@@ -47,6 +48,7 @@ nav ul {
 #homepage main {
     grid-area: main;
     padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #f4c2c2;
 }
 
