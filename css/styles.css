@@ -64,7 +64,8 @@ nav ul {
 
 #homepage footer {
     grid-area: footer;
-    padding: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-color: #d8a7e0;
 }
 
