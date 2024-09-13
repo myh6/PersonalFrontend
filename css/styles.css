@@ -35,14 +35,24 @@ nav ul {
     grid-area: local-menu;
     border-right: 1px solid black;
     background-color: #f4c2c2;
-    padding-right: 1rem;
 }
 
 .local-menu ul {
     display: flex;
     flex-direction: column;
-    padding-top: 1em;
-    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+    gap: 1em;
+}
+
+.local-menu a {
+    display: block;
+    padding: 10px;
+}
+
+.local-menu a:hover {
+    background-color: #d8a7e0;
 }
 
 #homepage main {
