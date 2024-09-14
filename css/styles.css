@@ -26,13 +26,13 @@ nav ul {
 }
 
 .primary-nav a:hover {
-    background-color: #4b0082;
+    background-color: rebeccapurple;
     color: white;
 }
 
 #homepage {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
         "header header"
@@ -42,13 +42,13 @@ nav ul {
 
 #homepage header {
     grid-area: header;
-    background-color: #d8a7e0;
+    background-color: plum;
 }
 
 #homepage .local-menu {
     grid-area: local-menu;
     border-right: 1px solid black;
-    background-color: #f4c2c2;
+    background-color: #ffc0cb;
 }
 
 .local-menu ul {
@@ -56,27 +56,27 @@ nav ul {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    padding-top: 2rem;
-    gap: 1em;
+    padding-top: 1em;
+    gap: 0.5em;
 }
 
 .local-menu a {
     display: block;
-    padding: 1em;
+    padding: 0.8em;
 }
 
 .local-menu a:hover {
-    background-color: #d8a7e0;
+    background-color: plum;
 }
 
 #homepage main {
     grid-area: main;
     padding: 0 1rem;
-    background-color: #f4c2c2;
+    background-color: pink;
 }
 
 #homepage footer {
     grid-area: footer;
     padding: 1rem 0;
-    background-color: #d8a7e0;
+    background-color: plum;
 }
