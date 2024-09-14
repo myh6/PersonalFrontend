@@ -56,13 +56,14 @@ nav ul {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    padding-top: 1em;
+    padding-top: 2em;
+    padding-left: 0.5em;
     gap: 0.5em;
 }
 
 .local-menu a {
     display: block;
-    padding: 0.8em;
+    padding: 0.5em;
 }
 
 .local-menu a:hover {
