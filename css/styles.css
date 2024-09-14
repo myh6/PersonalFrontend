@@ -48,7 +48,7 @@ nav ul {
 #homepage .local-menu {
     grid-area: local-menu;
     border-right: 1px solid black;
-    background-color: #ffc0cb;
+    background-color: pink;
 }
 
 .local-menu ul {
