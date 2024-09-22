@@ -1,0 +1,44 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header { 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.logo-image {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+}
+
+.header-navigation {
+    grid-column: span 12;
+    background-color: lightgray;
+    padding: 1rem 0;
+}
+
+.header-menu {
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+
+
+
+
