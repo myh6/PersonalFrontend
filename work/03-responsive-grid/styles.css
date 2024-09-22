@@ -53,8 +53,10 @@ main {
 }
 
 .card-list {
+    display: grid;
     padding: 0;
     grid-column: span 12;
+    gap: 2rem;
 }
 
 .read-more-button {
