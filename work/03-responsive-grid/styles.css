@@ -38,7 +38,43 @@ header {
     list-style-type: none;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    gap: 1rem;
+}
 
+.main-title {
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.card-list {
+    padding: 0;
+    grid-column: span 12;
+}
+
+.read-more-button {
+    padding: 1rem 4rem;
+    background-color: rgb(2, 90, 185);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    align-items: center;
+}
 
 
 
