@@ -50,8 +50,8 @@ header {
 }
 
 main {
+    margin: 2rem 0;
     display: grid;
-    grid-template-columns: repeat(12 1fr);
     gap: 1rem;
 }
 
@@ -59,7 +59,6 @@ main {
     display: flex;
     grid-column: span 12;
     justify-content: center;
-    margin-top: 2rem;
     padding: 1rem;
 }
 
