@@ -108,5 +108,39 @@ footer {
     padding: 1rem 0;
 }
 
+@media (min-width: 50rem) {
+    html, body {
+        height: auto;
+        width: 100%;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    header {
+        grid-template-areas: 
+        "logo title"
+        "navigation navigation";
+        grid-template-columns: 1fr 2fr;
+    }
 
+    .logo-image {
+        grid-area: logo;
+    }
 
+    .header-title {
+        grid-area: title;
+        align-items: center;
+        justify-content:left;
+    }
+
+    .header-navigation {
+        grid-area: navigation;
+    }
+
+    .header-menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
