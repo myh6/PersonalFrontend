@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
 }
 
@@ -13,4 +14,14 @@ header {
 
     background-color: #16325B;
     color: white;
+}
+
+footer {
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFDC7F;
+    color: #16325B;
 }
