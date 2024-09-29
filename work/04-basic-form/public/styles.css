@@ -30,6 +30,10 @@ form {
     display: flex;
 }
 
+.interaction-block {
+    padding: 1rem;
+}
+
 footer {
     min-height: 5rem;
     display: flex;
