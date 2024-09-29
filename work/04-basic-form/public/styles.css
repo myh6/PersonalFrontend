@@ -38,6 +38,10 @@ form {
     padding: 1rem;
 }
 
+.annoy-block {
+    padding: 1rem;
+}
+
 footer {
     min-height: 5rem;
     display: flex;
@@ -46,4 +50,16 @@ footer {
 
     background-color: #FFDC7F;
     color: #16325B;
+}
+
+@media (max-width: 50rem) {
+    .interaction-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .annoy-block {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
