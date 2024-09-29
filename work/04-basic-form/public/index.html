@@ -8,6 +8,18 @@
         <header>
             <h1>Website Title</h1>
         </header>
+        <main>
+            <h2 class="form-note"><span aria-hidden="true" class="required-note">*</span> is required to fill in.</h2>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Registration</legend>
+
+                    <label for="name">Name <span aria-hidden="true" class="required-note">*</span></label>
+                    <input id="name" name="name" required><br>
+
+                </fieldset>
+            </form>
+        </main>
         <footer>
             <a href="#">privacy policy</a>
         </footer>
