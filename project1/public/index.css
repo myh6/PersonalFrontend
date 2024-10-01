@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+
+    border-bottom: 1px solid gray;
+}
+
 .logo-image {
-    max-width: 5%;
+    max-width: 3rem;
 }
