@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -8,13 +10,60 @@ html, body {
 
 header {
     display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.logo-title {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
-
-    border-bottom: 1px solid gray;
 }
 
 .logo-image {
     max-width: 3rem;
+}
+
+/* Navigation */
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    width: 8rem;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    color: #16780F;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+ul li ul.dropdown-menu li {
+    display: block;
+}
+
+ul li ul.dropdown-menu {
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+}
+
+ul li a:hover {
+    background: gainsboro;
+}
+
+ul li:hover ul.dropdown-menu {
+    display: block;
+    height: auto;
 }
