@@ -83,3 +83,18 @@ ul li:hover ul.dropdown-menu {
     display: block;
     height: auto;
 }
+
+/* Main */
+main {
+    min-height: 100vh;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background: #16780F;
+    height: 5rem;
+    color: azure;
+}
