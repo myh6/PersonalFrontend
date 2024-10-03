@@ -87,6 +87,83 @@ ul li:hover ul.dropdown-menu {
 /* Main */
 main {
     min-height: 100vh;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem 0;
+    max-width: 100%;
+    grid-template-areas: 
+    "first-title"
+    "first-card-list"
+    "second-title"
+    "second-card-list"
+    ;
+}
+
+.news-title {
+    grid-area: first-title;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+
+.news-list {
+    grid-area: first-card-list;
+    display: contents;
+}
+
+.read-more-button {
+    padding: 1rem 4rem;
+    background-color: #16780F;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.news-card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    align-items: center;
+    max-width: 100%;
+}
+
+.famous-title {
+    grid-area: second-title;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.famous-list {
+    grid-area: second-card-list;
+    display: contents;
+}
+
+.famous-card {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    align-items: center;
+    max-width: 100%;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Footer */
