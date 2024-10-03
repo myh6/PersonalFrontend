@@ -33,7 +33,7 @@ ul {
 ul li {
     display: inline-block;
     position: relative;
-    width: 8rem;
+    width: 10rem;
 }
 
 ul li a {
@@ -43,6 +43,22 @@ ul li a {
     text-decoration: none;
     text-align: center;
     font-size: large;
+}
+
+ul li button {
+    display: block;
+    padding: 10px;
+    background: transparent;
+    color:#16780F;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background: gainsboro
 }
 
 ul li ul.dropdown-menu li {
