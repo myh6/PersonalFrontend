@@ -241,11 +241,12 @@ input {
 }
 
 .submit-button {
-    /* padding: 1rem; */
     width: 100%;
     margin-top: 1rem;
     padding: 1rem;
     margin: 1rem 0;
+    background-color: var(--button-color);
+    color: var(--text-color-light);
 }
 
 /* Footer */
