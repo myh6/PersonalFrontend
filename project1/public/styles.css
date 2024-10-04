@@ -270,3 +270,13 @@ footer {
         transition: rotate 0.3s ease;
     }
 }
+
+@media (max-width: 50rem) {
+    .news-card {
+        grid-column: span 12;
+    }
+
+    .famous-card {
+        grid-column: span 12;
+    }
+}
