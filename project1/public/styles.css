@@ -114,13 +114,13 @@ ul li {
 main {
     max-width: 100%;
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 /* Homepage*/
 main.homepage-content {
     margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     gap: 1rem 0;
     grid-template-areas: 
     "first-title"
@@ -208,11 +208,13 @@ main img {
 }
 
 .form-note {
+    grid-column: span 12;
     margin: 0;
     padding: 1rem;
 }
 
 form {
+    grid-column: span 12;
     padding: 1rem;
     justify-content: center;
 }
