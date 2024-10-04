@@ -196,6 +196,12 @@ main img {
     max-width: 100%;
 }
 
+/* About*/
+.main-content {
+    grid-column: span 12;
+    padding: 1rem;
+}
+
 /* Register*/
 .required-note {
     color: var(--required-note-color);
