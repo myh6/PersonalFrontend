@@ -50,7 +50,7 @@ ul li {
     width: 10rem;
 }
 
-ul li a {
+.dropdown-menu li a {
     display: block;
     padding: 10px;
     color: var(--primary-color);
@@ -71,29 +71,37 @@ ul li a {
     cursor: pointer;
 }
 
-.menu-button:hover {
+.menu-option:hover {
     background: var(--hover-background);
 }
 
-ul li ul.dropdown-menu li {
+.dropdown-menu li {
     display: block;
 }
 
-ul li ul.dropdown-menu {
+.dropdown-menu li:hover {
+    background-color: var(--hover-background);
+}
+
+.dropdown-menu {
     width: 100%;
     background: white;
     position: absolute;
     z-index: 999;
+    display: block;
     height: 0;
     overflow: hidden;
 }
 
-ul li a:hover {
-    background: var(--hover-background);
+.menu-option:hover ul.dropdown-menu {
+    height: auto;
 }
 
-ul li:hover ul.dropdown-menu {
-    display: block;
+.menu-option:focus ul.dropdown-menu {
+    height: auto;
+}
+
+.menu-option:focus-within ul.dropdown-menu {
     height: auto;
 }
 
