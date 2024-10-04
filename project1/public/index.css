@@ -46,7 +46,7 @@ ul li a {
     font-size: large;
 }
 
-ul li button {
+.menu-button {
     display: block;
     padding: 10px;
     background: transparent;
@@ -58,7 +58,7 @@ ul li button {
     cursor: pointer;
 }
 
-ul li button:hover {
+.menu-button:hover {
     background: gainsboro
 }
 
