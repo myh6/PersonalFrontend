@@ -165,9 +165,10 @@ main img {
     padding: 1rem;
     gap: 1rem;
     border: 1px solid var(--border-color);
-    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    box-shadow: -1px 1px 1px rgba(163, 163, 163, 0.3);
     align-items: center;
     max-width: 100%;
+    justify-content: space-between;
 }
 
 .famous-title {
@@ -191,9 +192,10 @@ main img {
     padding: 1rem;
     gap: 1rem;
     border: 1px solid var(--border-color);
-    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    box-shadow: -1px 1px 1px rgba(163, 163, 163, 0.3);
     align-items: center;
     max-width: 100%;
+    justify-content: space-between;
 }
 
 /* About*/
