@@ -90,19 +90,24 @@ ul li {
     z-index: 999;
     display: block;
     height: 0;
+    transform-origin: top;
+    rotate: x 90deg;
     overflow: hidden;
 }
 
 .menu-option:hover ul.dropdown-menu {
     height: auto;
+    rotate: x 0deg;
 }
 
 .menu-option:focus ul.dropdown-menu {
     height: auto;
+    rotate: x 0deg;
 }
 
 .menu-option:focus-within ul.dropdown-menu {
     height: auto;
+    rotate: x 0deg;
 }
 
 /* Main */
@@ -223,4 +228,14 @@ footer {
     background: var(--footer-background);
     height: 5rem;
     color: var(--text-color-light);
+}
+
+
+/* Media*/
+
+/* transition*/
+@media (prefers-reduced-motion: no-preference) {
+    ul.dropdown-menu {
+        transition: rotate 0.3s ease;
+    }
 }
