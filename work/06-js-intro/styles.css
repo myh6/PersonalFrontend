@@ -4,8 +4,22 @@
     margin: 0;
 }
 
+header {
+    border-bottom: 1px solid black;
+    background-color: #257180;
+}
+
+.title {
+    padding: 1rem;
+    color: #F2E5BF;
+}
+
 li {
     list-style: none;
+}
+
+button {
+    color: #E2F1E7;
 }
 
 .dropdown-menu {
@@ -14,7 +28,7 @@ li {
     height: 0;
     overflow: hidden;
     list-style-type: none;
-    background-color: #C0FFEE;
+    background-color: #629584;
     position: absolute;
     z-index: 1;
 }
@@ -29,7 +43,7 @@ li {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #E2F1E7;
     display: block;
 }
 
