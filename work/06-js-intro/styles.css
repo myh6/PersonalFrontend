@@ -26,6 +26,8 @@ button {
     display: block;
     width: 100%;
     height: 0;
+    transform-origin: top;
+    rotate: x 90deg;
     overflow: hidden;
     list-style-type: none;
     background-color: #629584;
@@ -49,6 +51,7 @@ button {
 
 .dropdown-menu.visible {
     height: auto;
+    rotate: x 0deg;
 }
 
 .menu-button {
@@ -59,4 +62,11 @@ button {
     font-size: large;
     border: none;
     cursor: pointer;
+}
+
+/* transition*/
+@media (prefers-reduced-motion: no-preference) {
+    ul.dropdown-menu {
+        transition: rotate 0.3s ease;
+    }
 }
