@@ -105,6 +105,16 @@ main {
     height: auto;
 }
 
+/* Footer*/
+footer {
+    height: 3rem;
+    padding: 1rem;
+    background-color: #243642;
+    color: #E2F1E7;
+    text-align: center;
+    align-items: center;
+}
+
 /* transition*/
 @media (prefers-reduced-motion: no-preference) {
     ul.dropdown-menu {
