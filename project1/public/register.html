@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <a href="index.html">
+          <img
+            src="images/dog-logo.png"
+            alt="Logo of the dog"
+            class="logo-image"
+          />
+        </a>
+        <h1>Register</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="menu-option">
+            <button class="menu-button">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </li>
+          <li class="menu-option">
+            <button class="menu-button">External Links</button>
+            <ul class="dropdown-menu">
+              <li><a href="https://en.wikipedia.org/wiki/Dog">Wiki</a></li>
+              <li><a href="https://www.petfinder.com/dogs-and-puppies/breeds/">Petfinder</a></li>
+              <li><a href="https://www.vetstreet.com/dogs">Vetstreet</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="form-note">
+        <span aria-hidden="true" class="required-note">*</span> is required to
+        fill in.
+      </h2>
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>Registration</legend>
+
+          <div class="interaction-block">
+            <label for="name">Name
+              <span aria-hidden="true" class="required-note">*</span>
+            </label>
+            <input id="name" name="name" required /><br/>
+          </div>
+
+          <div class="interaction-block">
+            <label for="email">Email
+              <span aria-hidden="true" class="required-note">*</span>
+            </label>
+            <input id="email" name="email" required /><br/>
+          </div>
+
+          <div class="like-dog-block">
+            <label for="like-dog-block">Do you also like dogs?</label>
+            <input
+              type="checkbox"
+              id="like-dog-block"
+              name="like-dog-block"
+              checked
+            /><br/>
+          </div>
+
+          <div class="interaction-block">
+            <label for="prefer-breed">Select preferred breed
+              <span aria-hidden="true" class="required-note">*</span>
+            </label>
+            <select id="prefer-breed" name="prefer-breed" required>
+              <option value="">Please select</option>
+              <option value="shiba">Shiba Inu</option>
+              <option value="beagle">Beagle</option>
+              <option value="pug">Pug</option>
+              <option value="corgi">Corgi</option>
+              <option value="golden retriever">Golden Retriever</option>
+            </select><br/>
+          </div>
+
+          <button type="submit" class="submit-button">Register</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <h2>Website designed by Min-Yang Huang.</h2>
+    </footer>
+
+  </body>
+</html>
