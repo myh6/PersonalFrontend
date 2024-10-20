@@ -1,0 +1,20 @@
+:root {
+    --theme-color-dark: #493628;
+    --theme-color-primary: #AB886D;
+    --theme-color-secondary: #D6C0B3;
+    --theme-color-light: #E4E0E1;
+    --horizontal-pading: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header*/
+header {
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-light);
+    padding: var(--horizontal-pading);
+}
