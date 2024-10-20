@@ -3,6 +3,7 @@
     --theme-color-primary: #AB886D;
     --theme-color-secondary: #D6C0B3;
     --theme-color-light: #E4E0E1;
+    --theme-color-red: #911F27;
     --horizontal-pading: 18px;
 }
 
@@ -17,4 +18,12 @@ header {
     background-color: var(--theme-color-dark);
     color: var(--theme-color-light);
     padding: var(--horizontal-pading);
+}
+
+.title-prompt {
+    padding: var(--horizontal-pading);
+}
+
+.required-note {
+    color: var(--theme-color-red);
 }
