@@ -5,7 +5,10 @@
     const nameEl = document.querySelector(".name-input");
     const nameErrorMessage = "Name is required";
 
+    const requiredEmailMessage = "Email is required";
     const emailEl = document.querySelector(".email-input");
+
+    const confirmEmailEl = document.querySelector(".confirm-email-input");
     
     formEl.addEventListener('submit', (e) => {
         console.log("Form submit was triggered");
@@ -17,8 +20,18 @@
         }
         
         if (emailEl.value.trim() === "") {
-            setError(emailEl,"Email is required");
-            hasError = true
+            setError(emailEl,requiredEmailMessage);
+            hasError = true;
+        }
+
+        if (confirmEmailEl.value.trim() === "") {
+            setError(confirmEmailEl,requiredEmailMessage);
+            hasError = true;
+        }
+
+        if (emailEl.value !== confirmEmailEl.value) {
+            setError(confirmEmailEl,"Email addresses do not match. Please ensure both entries are the same.");
+            hasError = true;
         }
 
         if (hasError) {
@@ -33,15 +46,15 @@
             if (e.target.value.trim() === '') {
                 setError(nameEl,nameErrorMessage);
             } else {
-                setError(nameEl)
+                setError(nameEl);
             }
         }
 
-        if (e.target.matches(".email-input")) {
+        if (e.target.matches(".email-input") || e.target.matches(".confirm-email-input")) {
             if (e.target.value.trim() === "") {
-                setError(emailEl,"Email is required");
+                setError(e.target,"Email is required");
             } else {
-                setError(emailEl);
+                setError(e);
             }
         }
     });
