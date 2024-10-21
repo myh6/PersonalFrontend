@@ -50,11 +50,19 @@
             }
         }
 
-        if (e.target.matches(".email-input") || e.target.matches(".confirm-email-input")) {
+        if (e.target.matches(".email-input")) {
             if (e.target.value.trim() === "") {
-                setError(e.target,"Email is required");
+                setError(emailEl,"Email is required");
             } else {
-                setError(e);
+                setError(emailEl);
+            }
+        }
+
+        if (e.target.matches(".confirm-email-input")) {
+            if (e.target.value.trim() === "") {
+                setError(confirmEmailEl,"Email is required");
+            } else {
+                setError(confirmEmailEl);
             }
         }
     });

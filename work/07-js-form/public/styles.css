@@ -45,3 +45,9 @@ form {
     color: var(--theme-color-red);
     border: 1px solid var(--theme-color-red);
 }
+
+button {
+    padding: var(--horizontal-pading) 20px;
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-secondary);
+}
