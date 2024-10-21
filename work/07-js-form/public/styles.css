@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+main {
+    min-height: 100vh;
+}
+
 /* Header*/
 header {
     background-color: var(--theme-color-dark);
@@ -54,6 +58,13 @@ button {
     padding: var(--horizontal-pading) 20px;
     background-color: var(--theme-color-dark);
     color: var(--theme-color-secondary);
+}
+
+/* Footer*/
+footer {
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-light);
+    padding: var(--horizontal-pading);
 }
 
 /* Media*/
