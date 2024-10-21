@@ -38,6 +38,10 @@ form {
     margin-bottom: var(--top-margin);
 }
 
+.form-section-checkbox {
+    margin-bottom: var(--top-margin);
+}
+
 .error__text div {
     padding: var(--horizontal-pading);
     margin-top: var(--top-margin);
@@ -50,4 +54,12 @@ button {
     padding: var(--horizontal-pading) 20px;
     background-color: var(--theme-color-dark);
     color: var(--theme-color-secondary);
+}
+
+/* Media*/
+@media (max-width: 40rem) {
+    .form-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
