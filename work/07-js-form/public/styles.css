@@ -34,6 +34,10 @@ form {
     padding: var(--horizontal-pading);
 }
 
+.form-section {
+    margin-bottom: var(--top-margin);
+}
+
 .error__text div {
     padding: var(--horizontal-pading);
     margin-top: var(--top-margin);
