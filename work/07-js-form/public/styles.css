@@ -5,6 +5,7 @@
     --theme-color-light: #E4E0E1;
     --theme-color-red: #911F27;
     --horizontal-pading: 18px;
+    --top-margin: 10px;
 }
 
 * {
@@ -26,4 +27,17 @@ header {
 
 .required-note {
     color: var(--theme-color-red);
+}
+
+/* Form*/
+form {
+    padding: var(--horizontal-pading);
+}
+
+.error__text div {
+    padding: var(--horizontal-pading);
+    margin-top: var(--top-margin);
+    background-color: var(--theme-color-secondary);
+    color: var(--theme-color-red);
+    border: 1px solid var(--theme-color-red);
 }

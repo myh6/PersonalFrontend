@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="styles.css">
-        <script derfer src="main.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Registration Page</h1>
-        </header>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Page</h1>
+    </header>
 
-        <div class="title-prompt">
-            <h2>Please fill out the form and submit</h2>
-            <h3><span class="required-note">*</span> is required to fill in.</h3>
-        </div>
+    <div class="title-prompt">
+      <h2>Please fill out the form and submit</h2>
+      <h3><span class="required-note">*</span> is required to fill in.</h3>
+    </div>
 
-    </body>
+    <form action="/register" method="POST" class="register-form">
+      <div class="form-section">
+        <label for="name">Name <span class="required-note">*</span></label>
+        <input type="text" id="name" name="name" class="name-input"/><br />
+        <span class="error__text"></span>
+      </div>
+    </form>
+  </body>
 </html>
