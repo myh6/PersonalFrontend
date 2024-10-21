@@ -11,7 +11,6 @@
     const confirmEmailEl = document.querySelector(".confirm-email-input");
     
     formEl.addEventListener('submit', (e) => {
-        console.log("Form submit was triggered");
         let hasError = false;
         
         if (nameEl.value.trim() === "") {
@@ -36,9 +35,7 @@
 
         if (hasError) {
             e.preventDefault();
-            console.log("Form submit was being prevented");
-        }
-        
+        }        
     });
 
     formEl.addEventListener('input', (e) => {
