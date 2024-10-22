@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background-color: #257180;
+}
+
+.title {
+    padding: 1rem;
+    color: #F2E5BF;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    color: #E2F1E7;
+}
+
+.dropdown-menu {
+    display: block;
+    width: 100%;
+    height: 0;
+    transform-origin: top;
+    rotate: x 90deg;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #629584;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    position: relative;
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #E2F1E7;
+    display: block;
+}
+
+.dropdown-menu.visible {
+    height: auto;
+    rotate: x 0deg;
+}
+
+.menu-button {
+    padding: 10px;
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main*/
+main {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem 0;
+    max-width: 100%;
+}
+
+.main-title {
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.card-list {
+    display: grid;
+    padding: 0;
+    grid-column: span 12;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: -1px 1px 1px rgba(211, 211, 211, 0.1);
+    align-items: center;
+    max-width: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer*/
+footer {
+    height: 3rem;
+    padding: 1rem;
+    background-color: #243642;
+    color: #E2F1E7;
+    text-align: center;
+    align-items: center;
+}
+
+@media(min-width: 50rem) {
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+        
+        
+    .card {
+        flex: 1;
+    }
+}
+
+/* transition*/
+@media (prefers-reduced-motion: no-preference) {
+    ul.dropdown-menu {
+        transition: rotate 0.3s ease;
+    }
+}
