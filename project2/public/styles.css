@@ -57,6 +57,11 @@ header {
     height: var(--image-size-logo);
 }
 
+.empty-space {
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+}
+
 .menu-button {
     display: block;
     border: none;
@@ -65,7 +70,9 @@ header {
     height: var(--image-size-logo);
 }
 
-.menu-image {
-    justify-content: center;
-    font-size: var(--font-size-default);
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

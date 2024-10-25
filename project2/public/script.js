@@ -1,8 +1,8 @@
 "use strict";
 (function() {
-    const docEL = document.querySelector('body');
-
-    docEL.addEventListener('click', (e) => {
-        console.log(docEL);
+    document.querySelector(".menu-button").addEventListener("click", function () {
+        console.log("Menu button being pressed");
+        const navLinks = document.querySelector(".nav-menu");
+        navLinks.classList.toggle("active");
     });
 })();
