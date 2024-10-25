@@ -1,4 +1,4 @@
-menu_24dp_000000_FILL0_wght200_GRAD0_opsz24.png: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23000000
+menu_20dp_000000_FILL0_wght300_GRAD0_opsz20.svg: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23000000
 
 Personally owned the following images:
 S__179109924.jpg
