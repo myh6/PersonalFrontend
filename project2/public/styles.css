@@ -76,3 +76,13 @@ header {
     flex-direction: row;
     justify-content: space-around;
 }
+
+.nav-menu a {
+    display: inline-block;
+    padding: var(--spacing-small);
+}
+
+.nav-menu a:hover {
+    background-color: var(--dropdown-background-color-selected);
+    color: var(--primary-color-white);
+}
