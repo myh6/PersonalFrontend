@@ -30,3 +30,42 @@
     --font-size-default: 1rem;
     --form-button-font-size: 1.2rem;
 }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* header*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-primary);
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-image {
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+}
+
+.menu-button {
+    display: block;
+    border: none;
+    background-color: var(--primary-color-primary);
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+}
+
+.menu-image {
+    justify-content: center;
+    font-size: var(--font-size-default);
+}
