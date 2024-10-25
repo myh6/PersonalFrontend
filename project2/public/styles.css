@@ -1,0 +1,32 @@
+:root {
+    --primary-color-primary: burlywood;
+    --primary-color-seconday: papayawhip;
+    --primary-color-light: #eee;
+    --primary-color-lime: lime;
+    --primary-color-lightcoral: lightcoral;
+    --primary-color-black: black;
+    --primary-color-dodgerblue: dodgerblue;
+    --primary-color-red: red;
+    --primary-color-blue: blue;
+    --primary-color-white: white;
+
+    --subscribe-background-color: var(--primary-color-lime);
+    --cancel-background-color: var(--primary-color-lightcoral);
+    --dropdown-background-color-selected: var(--primary-color-dodgerblue);
+
+    --image-size-logo: 100px;
+    --image-size-panels-cards: 200px;
+    --image-size-floating-panels: 125px;
+
+    --line-heights-default: 1.2;
+    --line-heights-medium: 1.4;
+    --line-heights-large: 1.6;
+
+    --no-spacing: 0;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+
+    --font-size-default: 1rem;
+    --form-button-font-size: 1.2rem;
+}
