@@ -52,6 +52,10 @@ header {
     width: 100%;
 }
 
+.logo-title a {
+    line-height: 0;
+}
+
 .logo-image {
     width: var(--image-size-logo);
     height: var(--image-size-logo);
@@ -92,12 +96,14 @@ header {
 
 /* Adaptive for small viewport*/
 @media (max-width: 40rem) {
+    /* header*/
     .menu-button {
         display: block;
     }
 
     .nav-bar.expand .nav-menu {
         display: block;
+        width: var(--image-size-floating-panels);
     }
 
     .nav-bar.expand a {
@@ -106,6 +112,9 @@ header {
 
     .nav-menu {
         display: none;
+        position: absolute;
+        right: 0%;
+        background-color: var(--primary-color-primary);
     }
 
 }
