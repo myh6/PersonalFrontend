@@ -109,6 +109,7 @@ header {
 main {
     background-color: var(--primary-color-seconday);
     min-height: 100vh;
+    min-height: 100dvh;
     padding-top: var(--spacing-small); /* Add padding to prevent margin collapse*/
 }
 
