@@ -10,4 +10,11 @@
             navBarEl.classList.remove('expand');
         }
     });
+
+    const subscribeEl = document.querySelector('.subscribe-button');
+
+    subscribeEl.addEventListener('click', (e) => {
+        e.preventDefault()
+        console.log(subscribeEl);
+    });
 })();

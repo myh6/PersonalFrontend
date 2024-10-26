@@ -111,6 +111,7 @@ main {
     min-height: 100vh;
     min-height: 100dvh;
     padding-top: var(--spacing-small); /* Add padding to prevent margin collapse*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
