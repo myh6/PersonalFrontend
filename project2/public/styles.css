@@ -118,7 +118,16 @@ main {
 .card-image {
     width: var(--image-size-panels-cards);
     height: var(--image-size-panels-cards);
+}
+
+.card-image.right {
     float: inline-end;
+    margin-left: var(--spacing-small);
+}
+
+.card-image.left {
+    float: inline-start;
+    margin-right: var(--spacing-small);
 }
 
 .card-content {
