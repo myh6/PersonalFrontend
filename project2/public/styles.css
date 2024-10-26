@@ -94,6 +94,37 @@ header {
     color: var(--primary-color-white);
 }
 
+/* main*/
+main {
+    background-color: var(--primary-color-seconday);
+    min-height: 100vh;
+    padding-top: var(--spacing-small); /* Add padding to prevent margin collapse*/
+}
+
+.card {
+    padding: var(--spacing-small);
+    border: 1px solid var(--primary-color-black);
+    margin: var(--spacing-small);
+    background-color: var(--primary-color-light);
+
+    overflow: hidden;
+}
+
+.card h2 {
+    text-align: center;
+    padding: var(--spacing-medium);
+}
+
+.card-image {
+    width: var(--image-size-panels-cards);
+    height: var(--image-size-panels-cards);
+    float: inline-end;
+}
+
+.card-content {
+    padding: var(--spacing-small) 0;
+}
+
 /* Adaptive for small viewport*/
 @media (max-width: 40rem) {
     /* header*/
@@ -115,6 +146,20 @@ header {
         position: absolute;
         right: 0%;
         background-color: var(--primary-color-primary);
+    }
+
+    /* main*/
+    main {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card-image {
+        width: var(--image-size-floating-panels);
+        height: var(--image-size-floating-panels);
     }
 
 }
