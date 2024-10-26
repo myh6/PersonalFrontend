@@ -63,11 +63,14 @@ header {
 }
 
 .menu-button {
-    display: block;
-    border: none;
-    background-color: var(--primary-color-primary);
+    display: none;
+    border: unset;
+    background-color: unset;
     width: var(--image-size-logo);
     height: var(--image-size-logo);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .nav-menu {
@@ -85,4 +88,24 @@ header {
 .nav-menu a:hover {
     background-color: var(--dropdown-background-color-selected);
     color: var(--primary-color-white);
+}
+
+/* Adaptive for small viewport*/
+@media (max-width: 40rem) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-bar.expand .nav-menu {
+        display: block;
+    }
+
+    .nav-bar.expand a {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
 }

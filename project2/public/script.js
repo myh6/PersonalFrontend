@@ -1,8 +1,13 @@
 "use strict";
 (function() {
-    document.querySelector(".menu-button").addEventListener("click", function () {
-        console.log("Menu button being pressed");
-        const navLinks = document.querySelector(".nav-menu");
-        navLinks.classList.toggle("active");
+    const hamburgerEl = document.querySelector(".menu-button");
+    const navBarEl = document.querySelector(".nav-bar");
+
+    hamburgerEl.addEventListener("click", () => {
+        if (!navBarEl.classList.contains('expand')) {
+            navBarEl.classList.add('expand');
+        } else {
+            navBarEl.classList.remove('expand');
+        }
     });
 })();
