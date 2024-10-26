@@ -115,6 +115,28 @@
           </p></br>
         </div>
       </div>
+
+      <dialog class="modal" id="dialog">
+            <h2>Subscribe to the latest News!</h2>
+            <form action="/subscribe" method="POST">
+                <div class="interaction-block">
+                    <label for="email">Email: <span class="required-note">* required</span></label>
+                    <input id="email" name="email" type="text">
+                    <span class="error-text"></span>
+                </div>
+                <div class="interaction-block">
+                    <label for="confirm">Confirm Email: <span class="required-note">* required</span></label>
+                    <input id="confirm" name="confirm" type="text">
+                    <span class="error-text"></span>
+                </div>
+
+                <div class="button-group">
+                    <button class="subscribe-form" type="submit">Subscribe</button>
+                    <button class="cancel-form">Cancel</button>
+                </div>
+            </form>
+      </dialog>
+
     </main>
 
     <footer>

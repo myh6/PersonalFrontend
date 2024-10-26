@@ -11,10 +11,24 @@
         }
     });
 
-    const subscribeEl = document.querySelector('.subscribe-button');
+    // dialog
 
-    subscribeEl.addEventListener('click', (e) => {
-        e.preventDefault()
-        console.log(subscribeEl);
+    const subscribeButtons = document.querySelectorAll('.subscribe-button');
+    const modalEl = document.querySelector('dialog');
+    const cancelEl = document.querySelector('.cancel-form');
+
+    subscribeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            modalEl.showModal();
+        });
     });
+
+    cancelEl.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalEl.close();
+    });
+
+    // form
+
 })();
