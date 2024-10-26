@@ -44,6 +44,17 @@ header {
     background-color: var(--primary-color-primary);
 }
 
+.skiplink {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+}
+
+.skiplink:focus {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .logo-title {
     display: flex;
     flex-direction: row;
