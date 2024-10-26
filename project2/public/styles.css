@@ -148,30 +148,6 @@ main {
     padding: var(--spacing-small) 0;
 }
 
-/* Dottie Card*/
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.dottie-card {
-    border: 1px solid var(--primary-color-black);
-    padding: var(--spacing-small);
-    margin: var(--spacing-small);
-    background-color: var(--primary-color-light);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.dottie-card h2 {
-    padding: var(--spacing-large);
-}
-
-.dottie-card .card-content {
-    text-align: left;
-}
-
 /* footer*/
 footer {
     background-color: var(--primary-color-primary);
@@ -185,64 +161,6 @@ footer ul {
     justify-content: space-around;
     list-style: none;
     gap: var(--spacing-small);
-}
-
-/* Dialog*/
-.modal {
-    padding: var(--spacing-medium);
-    margin: auto;
-}
-
-.modal::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal h2 {
-    padding: var(--spacing-medium) 0;
-}
-
-.interaction-block {
-    display: flex;
-    flex-direction: column;
-    padding: var(--spacing-small) 0;
-}
-
-.required-note {
-    font-style: italic;
-}
-
-
-input.hasError {
-    border: 2px solid var(--primary-color-red);
-}
-
-.error-text {
-    font-style: italic;
-    color: var(--primary-color-red);
-}
-
-.button-group {
-    margin-top: var(--spacing-large);
-    display: flex;
-    justify-content: space-between;
-}
-
-.subscribe-form {
-    background-color: var(--primary-color-lime);
-    font-size: var(--form-button-font-size);
-    padding: var(--spacing-small);
-    border-radius: 15px;
-    border: 0.5px solid var(--primary-color-black);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
-
-.cancel-form {
-    padding: var(--spacing-small);
-    font-size: var(--form-button-font-size);
-    background-color: var(--primary-color-lightcoral);
-    border-radius: 15px;
-    border: 0.5px solid var(--primary-color-black);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 /* Adaptive for small viewport*/
@@ -266,6 +184,28 @@ input.hasError {
         position: absolute;
         right: 0%;
         background-color: var(--primary-color-primary);
+    }
+
+    /* main*/
+    main {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card-image {
+        width: var(--image-size-floating-panels);
+        height: var(--image-size-floating-panels);
+    }
+
+    /* footer*/
+    footer {
+        padding: var(--spacing-small);
+    }
+    footer ul {
+        flex-direction: column;
     }
 
 }
