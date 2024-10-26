@@ -134,6 +134,21 @@ main {
     padding: var(--spacing-small) 0;
 }
 
+/* footer*/
+footer {
+    background-color: var(--primary-color-primary);
+    padding: var(--spacing-large);
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: var(--spacing-small);
+}
+
 /* Adaptive for small viewport*/
 @media (max-width: 40rem) {
     /* header*/
@@ -169,6 +184,14 @@ main {
     .card-image {
         width: var(--image-size-floating-panels);
         height: var(--image-size-floating-panels);
+    }
+
+    /* footer*/
+    footer {
+        padding: var(--spacing-small);
+    }
+    footer ul {
+        flex-direction: column;
     }
 
 }
