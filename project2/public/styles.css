@@ -217,6 +217,15 @@ footer ul {
     justify-content: space-between;
 }
 
+input.hasError {
+    border: 2px solid var(--primary-color-red);
+}
+
+.error-text {
+    font-style: italic;
+    color: var(--primary-color-red);
+}
+
 /* Adaptive for small viewport*/
 @media (max-width: 40rem) {
     /* header*/
