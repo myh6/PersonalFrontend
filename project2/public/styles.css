@@ -246,7 +246,7 @@ input.hasError {
 }
 
 /* Adaptive for small viewport*/
-@media (max-width: 40rem) {
+@media (max-width: 44rem) {
     /* header*/
     .menu-button {
         display: block;
