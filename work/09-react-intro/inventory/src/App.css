@@ -1,0 +1,17 @@
+#root {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+button:hover {
+  filter: drop-shadow(0 0 1em #48CFCB);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+}

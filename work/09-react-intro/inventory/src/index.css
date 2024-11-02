@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 1em 2em;
+  font-size: 3em;
+  font-family: inherit;
+  background-color: #229799;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #48CFCB;
+  
+}
