@@ -1,9 +1,10 @@
 import './Reorder.css'
-import { useState } from 'react'
+import './HoveredButton'
+import HoveredButton from './HoveredButton';
 
 function Reorder({ onReorder }) {
     return (
-        <button className="fadeIn" onClick={onReorder}>Reorder</button>
+        <HoveredButton className="fadeIn" onClick={onReorder} name={"Reorder"}/>
     );
 }
 

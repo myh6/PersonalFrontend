@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Reorder from './Reorder';
+import HoveredButton from './HoveredButton';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,16 +21,12 @@ function App() {
   };
 
   return (
-    <>
       <div>
         <h1>Inventory Count: {count}</h1>
-        <div className="button-group">
-          <button onClick={increaseCount}>+</button>
-          <button onClick={decreadeCount} disabled={count === 0}>-</button>
-          {count === 0 && <Reorder onReorder={handleReorder} />}
-        </div>
+        <HoveredButton onClick={increaseCount} name={"+"} />
+        <HoveredButton onClick={decreadeCount} disabled={count === 0} name={"-"} />
+        {count === 0 && <Reorder onReorder={handleReorder} />}
       </div>
-    </>
   );
 }
 

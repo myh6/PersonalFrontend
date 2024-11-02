@@ -5,13 +5,13 @@
   text-align: center;
 }
 
-button:hover {
-  filter: drop-shadow(0 0 1em #48CFCB);
-}
-
-.button-group {
+div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1.5em;
+}
+
+h1 {
+  font-size: 5em;
 }
