@@ -1,0 +1,313 @@
+:root {
+    --primary-color-primary: burlywood;
+    --primary-color-seconday: papayawhip;
+    --primary-color-light: #eee;
+    --primary-color-lime: lime;
+    --primary-color-lightcoral: lightcoral;
+    --primary-color-black: black;
+    --primary-color-dodgerblue: dodgerblue;
+    --primary-color-red: red;
+    --primary-color-blue: blue;
+    --primary-color-white: white;
+
+    --subscribe-background-color: var(--primary-color-lime);
+    --cancel-background-color: var(--primary-color-lightcoral);
+    --dropdown-background-color-selected: var(--primary-color-dodgerblue);
+
+    --image-size-logo: 100px;
+    --image-size-panels-cards: 200px;
+    --image-size-floating-panels: 125px;
+
+    --line-heights-default: 1.2;
+    --line-heights-medium: 1.4;
+    --line-heights-large: 1.6;
+
+    --no-spacing: 0;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+
+    --font-size-default: 1rem;
+    --form-button-font-size: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* header*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-primary);
+}
+
+.skiplink {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+}
+
+.skiplink:focus {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-title a {
+    line-height: 0;
+}
+
+.logo-image {
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+}
+
+.empty-space {
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+}
+
+.menu-button {
+    display: none;
+    border: unset;
+    background-color: unset;
+    width: var(--image-size-logo);
+    height: var(--image-size-logo);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-menu a {
+    display: inline-block;
+    padding: var(--spacing-small);
+}
+
+.nav-menu a:hover {
+    background-color: var(--dropdown-background-color-selected);
+    color: var(--primary-color-white);
+}
+
+/* main*/
+main {
+    background-color: var(--primary-color-seconday);
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: var(--spacing-small); /* Add padding to prevent margin collapse*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-default);
+}
+
+.card {
+    padding: var(--spacing-small);
+    border: 1px solid var(--primary-color-black);
+    margin: var(--spacing-small);
+    background-color: var(--primary-color-light);
+
+    overflow: hidden;
+}
+
+.card h2 {
+    text-align: center;
+    padding: var(--spacing-medium);
+}
+
+.card-image {
+    width: var(--image-size-panels-cards);
+    height: var(--image-size-panels-cards);
+}
+
+.card-image.right {
+    float: inline-end;
+    margin-left: var(--spacing-small);
+}
+
+.card-image.left {
+    float: inline-start;
+    margin-right: var(--spacing-small);
+}
+
+.card-content {
+    padding: var(--spacing-small) 0;
+}
+
+/* Dottie Card*/
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.dottie-card {
+    border: 1px solid var(--primary-color-black);
+    padding: var(--spacing-small);
+    margin: var(--spacing-small);
+    background-color: var(--primary-color-light);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dottie-card h2 {
+    padding: var(--spacing-large);
+}
+
+.dottie-card .card-content {
+    text-align: left;
+}
+
+/* footer*/
+footer {
+    background-color: var(--primary-color-primary);
+    padding: var(--spacing-large);
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: var(--spacing-small);
+}
+
+/* Dialog*/
+.modal {
+    padding: var(--spacing-medium);
+    margin: auto;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+    padding: var(--spacing-medium) 0;
+}
+
+.interaction-block {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-small) 0;
+}
+
+.required-note {
+    font-style: italic;
+}
+
+
+input.hasError {
+    border: 2px solid var(--primary-color-red);
+}
+
+.error-text {
+    font-style: italic;
+    color: var(--primary-color-red);
+}
+
+.button-group {
+    margin-top: var(--spacing-large);
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-form {
+    background-color: var(--primary-color-lime);
+    font-size: var(--form-button-font-size);
+    padding: var(--spacing-small);
+    border-radius: 15px;
+    border: 0.5px solid var(--primary-color-black);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.cancel-form {
+    padding: var(--spacing-small);
+    font-size: var(--form-button-font-size);
+    background-color: var(--primary-color-lightcoral);
+    border-radius: 15px;
+    border: 0.5px solid var(--primary-color-black);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+/* Adaptive for small viewport*/
+@media (max-width: 44rem) {
+    /* header*/
+    .menu-button {
+        display: block;
+    }
+
+    .nav-bar.expand .nav-menu {
+        display: block;
+        width: var(--image-size-floating-panels);
+    }
+
+    .nav-bar.expand a {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        right: 0%;
+        background-color: var(--primary-color-primary);
+    }
+
+    /* main*/
+    main {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card-image {
+        width: var(--image-size-floating-panels);
+        height: var(--image-size-floating-panels);
+    }
+
+    /* Dottie*/
+    .card-grid {
+        padding: var(--spacing-small);
+        grid-template-columns: auto;
+    }
+
+    .dottie-card {
+        text-align: left;
+    }
+
+    .dottie-card h2 {
+        padding: var(--spacing-medium) 0;
+    }
+
+    .card-grid .card-image {
+        width: var(--image-size-panels-cards);
+        height: var(--image-size-panels-cards);
+        margin: var(--spacing-small) 0;
+    }
+
+    /* footer*/
+    footer {
+        padding: var(--spacing-small);
+    }
+    footer ul {
+        flex-direction: column;
+    }
+
+}
