@@ -1,3 +1,4 @@
+import './App.css';
 import Header from './Header';
 import MainArea from './MainArea';
 import Home from './Home';
