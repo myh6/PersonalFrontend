@@ -1,12 +1,25 @@
 import './NavBar.css';
 
-function NavBar({navToHash}) {
+function NavBar({navToHash, currentPage}) {
+    const tabs = [
+        { hash: '#home', label: 'Home'},
+        { hash: '#secondPage', label: 'Second Page'},
+        { hash: '#thirdPage', label: 'Third Page'},
+    ];
+
     return (
         <nav>
             <ul className='nav-bar__menu'>
-                <li><a href="#home" onClick={navToHash}>Home</a></li>
-                <li><a href="#secondPage" onClick={navToHash}>Second Page</a></li>
-                <li><a href="#thirdPage" onClick={navToHash}>Third Page</a></li>
+                { tabs.map( tab => (
+                    <a 
+                    key={tab.label}
+                    href={tab.hash} 
+                    onClick={navToHash}
+                    className={currentPage === tab.hash ? 'active':''}
+                    >
+                    {tab.label}
+                    </a>
+                )) }
             </ul>
         </nav>
     );

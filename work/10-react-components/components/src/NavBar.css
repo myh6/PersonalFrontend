@@ -23,3 +23,6 @@
     background-color: #088395;
 }
 
+.nav-bar__menu a.active {
+    background-color: #37B7C3;
+}
