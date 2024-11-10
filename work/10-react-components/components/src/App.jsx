@@ -1,10 +1,15 @@
-function App() {
+import Header from './Header';
+import MainArea from './MainArea';
+import Footer from './Footer';
 
+function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
-  )
+    <div>
+      <Header/>
+      <MainArea/>
+      <Footer/>
+    </div>
+  );
 }
 
-export default App
+export default App;
