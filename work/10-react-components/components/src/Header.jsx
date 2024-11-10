@@ -1,6 +1,11 @@
-function Header() {
+import './Header.css';
+
+function Header({ children }) {
     return (
-        <div>Header</div>
+        <div className="header-content">
+            <h1>MY Page</h1>
+            { children }
+        </div>
     );
 }
 

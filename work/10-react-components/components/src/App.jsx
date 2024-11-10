@@ -20,8 +20,9 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <NavBar navToHash={navToHash} currentPage={page}/>
+      <Header>
+        <NavBar navToHash={navToHash} currentPage={page} />
+      </Header>
       <MainArea>
         {(page === '#home') && <Home />}
         {(page === '#secondPage') && <SecondPage />}
