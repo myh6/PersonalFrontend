@@ -1,0 +1,33 @@
+.button {
+    color: #EBF4F6;
+    text-decoration: none;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    position: relative;
+    background-color: #071952;
+}
+
+.button.active {
+    background-color: #088395;
+}
+
+.nav-button {
+    border: none;
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #EBF4F6;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-button:hover::after {
+    width: 100%;
+    left: 0;
+}

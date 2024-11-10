@@ -12,16 +12,14 @@ function App() {
 
   const [page, setPage] = useState('#home');
 
-  function navToHash(eventOrHash) {
-    eventOrHash?.preventDefault();
-    const hash = eventOrHash?.target?.hash || eventOrHash;
-    setPage(hash)
+  function navTo(event) {
+    setPage(event)
   }
 
   return (
     <div>
       <Header>
-        <NavBar navToHash={navToHash} currentPage={page} />
+        <NavBar navTo={navTo} currentPage={page} />
       </Header>
       <MainArea>
         {(page === '#home') && <Home />}
