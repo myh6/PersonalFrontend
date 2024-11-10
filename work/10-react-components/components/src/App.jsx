@@ -1,4 +1,5 @@
 import Header from './Header';
+import MainArea from './MainArea';
 import Home from './Home';
 import SecondPage from './SecondPage';
 import ThirdPage from './ThirdPage';
@@ -20,9 +21,11 @@ function App() {
     <div>
       <Header />
       <NavBar navToHash={navToHash} />
-      {(page === '#home') && <Home />}
-      {(page === '#secondPage') && <SecondPage />}
-      {(page === '#thirdPage') && <ThirdPage />}
+      <MainArea>
+        {(page === '#home') && <Home />}
+        {(page === '#secondPage') && <SecondPage />}
+        {(page === '#thirdPage') && <ThirdPage />}
+      </MainArea>
       <Footer />
     </div>
   );
