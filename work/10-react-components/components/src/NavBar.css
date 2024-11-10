@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar__menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #071952;
+}
+
+.nav-bar__menu a{
+    color: #EBF4F6;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.nav-bar__menu a:hover {
+    background-color: #088395;
+}
+
