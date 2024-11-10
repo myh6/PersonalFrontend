@@ -14,15 +14,28 @@
 .nav-bar__menu a{
     color: #EBF4F6;
     text-decoration: none;
-    padding: 15px;
+    padding: 2rem;
     display: block;
     text-align: center;
-}
-
-.nav-bar__menu a:hover {
-    background-color: #088395;
+    position: relative;
 }
 
 .nav-bar__menu a.active {
-    background-color: #37B7C3;
+    background-color: #088395;
+}
+
+.nav-bar__menu a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #EBF4F6;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-bar__menu a:hover::after {
+    width: 100%;
+    left: 0;
 }
