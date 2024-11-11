@@ -24,3 +24,45 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
         0 6px 20px rgba(0, 0, 0, 0.1);
 }
+
+.modal {
+    padding: 1rem;
+    margin: auto;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.interactino-block label {
+    padding: 1rem 0;
+}
+
+.email-input {
+    width: 100%;
+    height: 30px;
+}
+
+.modal .button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .subscribe-form {
+    display: block;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.modal .cancel-form {
+    background-color: #088395;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}

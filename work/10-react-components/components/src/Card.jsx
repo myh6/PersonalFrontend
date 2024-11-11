@@ -1,7 +1,18 @@
 import './Card.css';
 import Button from "./Button";
+import { useRef } from 'react';
 
 function Card() {
+    const dialogRef = useRef();
+
+    function openDialog() {
+        dialogRef.current.showModal();
+    }
+
+    function cancelDialog() {
+        dialogRef.current.close();
+    }
+
     return (
         <>
             <h1 className='card-title'>Cards</h1>
@@ -11,7 +22,7 @@ function Card() {
                     <div className="card-content">
                         <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quam!</p>
                         <p>
-                            Lorem ipsum dolor <Button visual="link">Subscribe</Button> sit amet.
+                            Lorem ipsum dolor <Button visual="link" onClick={openDialog}>Subscribe</Button> sit amet.
                         </p>
                     </div>
                 </div>
@@ -37,6 +48,19 @@ function Card() {
                     </div>
                 </div>
             </div>
+            <dialog className="modal" id="dialog" ref={dialogRef}>
+                <h2>Subscribe to MY page!</h2>
+                <form action="/subscribe" method="POST">
+                    <div className="interaction-block">
+                        <label htmlFor="email">email: <span className="required-note">* required</span></label><br />
+                        <input id="email" name="email" type="text" className="email-input" />
+                    </div>
+                    <div className='button-group'>
+                        <Button className="subscribe-form" type="submit">Subscribe</Button>
+                        <Button className="cancel-form" onClick={cancelDialog}>Cancel</Button>
+                    </div>
+                </form>
+            </dialog>
         </>
     );
 }
