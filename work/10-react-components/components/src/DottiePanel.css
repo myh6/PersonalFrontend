@@ -8,7 +8,11 @@
 }
 
 .content-container {
-    background-color: #088395;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-content {
     padding: 2rem;
     margin-bottom: 2rem;
     display: flex;
@@ -19,10 +23,18 @@
     animation: fadeIn 0.8s ease-in forwards;
 }
 
-.content-container img {
+.panel__right {
+    background: linear-gradient(to right, #EBF4F6, #088395, #071952);
+}
+
+.panel__left {
+    background: linear-gradient(to left, #EBF4F6, #088395, #071952);
+}
+
+.panel-content img {
     padding: 1rem;
-    max-width: fit-content;
-    height: fit-content;
+    max-width: 50vh;
+    height: auto;
     display: block;
     padding-right: 3rem;
 }
