@@ -9,7 +9,8 @@
 
 .card-collection {
     align-self: center;
-    padding: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -18,13 +19,16 @@
 }
 
 .card h2 {
-    padding-bottom: 2em;
+    color: #071952;
+    padding-bottom:1em;
+    padding-top: 4em;
 }
 
 .card {
     flex: 1;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
         0 6px 20px rgba(0, 0, 0, 0.1);
