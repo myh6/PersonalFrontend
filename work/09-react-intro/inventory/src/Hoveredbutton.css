@@ -1,0 +1,29 @@
+.animated-button {
+    transition: all 0.2s ease-in-out;
+}
+
+.animated-button.hovered {
+    transform: scale(1.1);
+}
+
+button:hover {
+    filter: drop-shadow(0 0 1em #48CFCB);
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 0.3em 2em;
+    font-size: 2em;
+    font-family: inherit;
+    color: white;
+    background-color: #229799;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+    filter: none;
+}
