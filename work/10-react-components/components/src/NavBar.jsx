@@ -5,7 +5,7 @@ function NavBar({ navTo, currentPage }) {
     const tabs = [
         { hash: '#home', label: 'Home' },
         { hash: '#cards', label: 'Cards' },
-        { hash: '#thirdPage', label: 'Third Page' },
+        { hash: '#panels', label: 'Dottie Panels' },
     ];
 
     return (

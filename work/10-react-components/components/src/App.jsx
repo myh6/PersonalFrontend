@@ -3,7 +3,7 @@ import Header from './Header';
 import MainArea from './MainArea';
 import Home from './Home';
 import Card from './Card';
-import ThirdPage from './ThirdPage';
+import DottiePanel from './DottiePanel';
 import Footer from './Footer';
 import NavBar from './NavBar';
 import { useState } from 'react';
@@ -24,7 +24,7 @@ function App() {
       <MainArea>
         {(page === '#home') && <Home />}
         {(page === '#cards') && <Card />}
-        {(page === '#thirdPage') && <ThirdPage />}
+        {(page === '#panels') && <DottiePanel />}
       </MainArea>
       <Footer />
     </div>
