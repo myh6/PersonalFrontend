@@ -5,18 +5,21 @@ import { useRef, useState } from 'react';
 function Card() {
     const dialogRef = useRef();
     const [email, setEmail] = useState('');
+    const [tempEmail, setTempEmail] = useState('');
 
     function openDialog() {
+        setTempEmail(email);
         dialogRef.current.showModal();
     }
 
     function cancelDialog() {
+        setEmail(email);
         dialogRef.current.close();
     }
 
     function handleSubmit(event) {
         event.preventDefault();
-        setEmail(event.target.value);
+        setEmail(tempEmail);
         dialogRef.current.close();
     }
 
@@ -60,7 +63,13 @@ function Card() {
                 <form action="/subscribe" method="POST">
                     <div className="interaction-block">
                         <label htmlFor="email">email: <span className="required-note">* required</span></label><br />
-                        <input id="email" name="email" type="text" className="email-input" defaultValue={email}/>
+                        <input
+                            id="email"
+                            name="email"
+                            className="email-input"
+                            value={tempEmail}
+                            onChange={(e) => setTempEmail(e.target.value)}
+                        />
                     </div>
                     <div className='button-group'>
                         <Button className="subscribe-form" type="submit" onClick={handleSubmit}>Subscribe</Button>
