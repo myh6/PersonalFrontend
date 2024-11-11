@@ -1,15 +1,22 @@
 import './Card.css';
 import Button from "./Button";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 function Card() {
     const dialogRef = useRef();
+    const [email, setEmail] = useState('');
 
     function openDialog() {
         dialogRef.current.showModal();
     }
 
     function cancelDialog() {
+        dialogRef.current.close();
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        setEmail(event.target.value);
         dialogRef.current.close();
     }
 
@@ -53,10 +60,10 @@ function Card() {
                 <form action="/subscribe" method="POST">
                     <div className="interaction-block">
                         <label htmlFor="email">email: <span className="required-note">* required</span></label><br />
-                        <input id="email" name="email" type="text" className="email-input" />
+                        <input id="email" name="email" type="text" className="email-input" defaultValue={email}/>
                     </div>
                     <div className='button-group'>
-                        <Button className="subscribe-form" type="submit">Subscribe</Button>
+                        <Button className="subscribe-form" type="submit" onClick={handleSubmit}>Subscribe</Button>
                         <Button className="cancel-form" onClick={cancelDialog}>Cancel</Button>
                     </div>
                 </form>
