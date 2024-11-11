@@ -1,0 +1,32 @@
+.home-title {
+    padding: 5rem 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.home-content > * {
+    flex: 1;
+}
+
+.home-content p:first-child:first-letter {
+    font-size: 3em;
+    color: #088395;
+}
