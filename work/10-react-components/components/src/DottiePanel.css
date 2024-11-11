@@ -23,18 +23,25 @@
     animation: fadeIn 0.8s ease-in forwards;
 }
 
+.panel-content img {
+    padding: 1rem;
+    max-width: 50vh;
+    height: auto;
+    display: block;
+}
+
 .panel__right {
     background: linear-gradient(to right, #EBF4F6, #088395, #071952);
+}
+
+.panel__right img {
+    padding-right: 3rem;
 }
 
 .panel__left {
     background: linear-gradient(to left, #EBF4F6, #088395, #071952);
 }
 
-.panel-content img {
-    padding: 1rem;
-    max-width: 50vh;
-    height: auto;
-    display: block;
-    padding-right: 3rem;
+.panel__left img {
+    padding-left: 3rem;
 }
