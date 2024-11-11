@@ -1,6 +1,8 @@
+import './Footer.css';
+
 function Footer () {
     return (
-        <div>Footer</div>
+        <div className="footer">This webiste is designed by Min-Yang Huang</div>
     );
 }
 
