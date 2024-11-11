@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header';
 import MainArea from './MainArea';
 import Home from './Home';
-import SecondPage from './SecondPage';
+import Card from './Card';
 import ThirdPage from './ThirdPage';
 import Footer from './Footer';
 import NavBar from './NavBar';
@@ -23,7 +23,7 @@ function App() {
       </Header>
       <MainArea>
         {(page === '#home') && <Home />}
-        {(page === '#secondPage') && <SecondPage />}
+        {(page === '#cards') && <Card />}
         {(page === '#thirdPage') && <ThirdPage />}
       </MainArea>
       <Footer />

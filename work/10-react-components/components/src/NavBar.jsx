@@ -4,7 +4,7 @@ import Button from './Button';
 function NavBar({ navTo, currentPage }) {
     const tabs = [
         { hash: '#home', label: 'Home' },
-        { hash: '#secondPage', label: 'Second Page' },
+        { hash: '#cards', label: 'Cards' },
         { hash: '#thirdPage', label: 'Third Page' },
     ];
 
