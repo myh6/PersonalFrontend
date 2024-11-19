@@ -1,0 +1,78 @@
+.card-title {
+    padding: 5rem 0;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-in forwards;
+}
+
+.card-collection {
+    align-self: center;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.card h2 {
+    color: #071952;
+    padding-bottom:1em;
+    padding-top: 4em;
+}
+
+.card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    padding: 1rem;
+    margin: auto;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.interactino-block label {
+    padding: 1rem 0;
+}
+
+.email-input {
+    width: 100%;
+    height: 30px;
+    padding: 0.5rem;;
+}
+
+.modal .button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .subscribe-form {
+    display: block;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.modal .cancel-form {
+    background-color: #088395;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+.header-content {
+    padding: 0 3rem;
+    gap: 3rem;
+    background-color: #071952;
+    color: #EBF4F6;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
