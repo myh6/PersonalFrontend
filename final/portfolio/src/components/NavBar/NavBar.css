@@ -66,11 +66,13 @@ Button {
     }
 
     .nav-bar__menu {
-        display: none;
+        display: block;
+        height: 0;
         flex-direction: column;
+        transform-origin: top;
+        rotate: x 90deg;
+        overflow: hidden;
         position: relative;
-        top: 100%;
-        left: 0;
         z-index: 10;
         overflow: hidden;
         text-align: center;
@@ -83,9 +85,17 @@ Button {
 
     .nav-bar__menu.show {
         display: flex;
+        rotate: x 0deg;
+        height: auto;
     }
 
     .nav-button {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    ul.nav-bar__menu {
+        transition: rotate 0.3s ease;
     }
 }
