@@ -1,3 +1,4 @@
+import '../../BaseStyle.css'
 import './Button.css'
 
 function Button({ children, type = "button", visual = "button", onClick, className }) {
