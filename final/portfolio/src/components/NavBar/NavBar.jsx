@@ -1,5 +1,5 @@
 import './NavBar.css';
-import Button from './Button';
+import Button from '../Button/Button';
 
 function NavBar({ tabs, onTabClick, currentPage }) {
     return (
@@ -8,7 +8,7 @@ function NavBar({ tabs, onTabClick, currentPage }) {
                 {tabs.map((tab, index) => (
                     <li key={index}>
                         <Button
-                            onClick={() => onTabClick(tab) }
+                            onClick={() => onTabClick(tab)}
                             className={`${currentPage === tab.hash ? 'active' : ''} ${"nav-button"}`}
                         >
                             {tab.label}
