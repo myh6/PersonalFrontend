@@ -1,39 +1,3 @@
-
-.button {
-    color: var(--text-dark-color);
-    text-decoration: none;
-    padding: var(--spacing-large);
-    display: block;
-    text-align: center;
-    position: relative;
-    background-color: var(--white-color);
-}
-
-.button.active {
-    color: var(--white-color);
-    background-color: var(--secondary-color);
-}
-
-.nav-button {
-    border: none;
-}
-
-.nav-button::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: var(--text-dark-color);
-    transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-button:hover::after {
-    width: 100%;
-    left: 0;
-}
-
 .button-link {
     color: var(--text-dark-color);
     text-decoration: underline;

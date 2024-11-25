@@ -1,9 +1,18 @@
 .header-content {
-    padding: 0 var(--spacing-large);
     background-color: var(--white-color);
     color: var(--text-dark-color);
     justify-content: space-between;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    padding: var(--spacing-large);
+}
+
+@media (max-width: 40rem) {
+    .header-content {
+        flex-direction: column;
+    }
 }

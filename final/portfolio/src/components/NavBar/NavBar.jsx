@@ -1,10 +1,19 @@
-import './NavBar.css';
+import '../../BaseStyle.css';
 import Button from '../Button/Button';
+import './NavBar.css';
+import { useState } from 'react';
 
 function NavBar({ tabs, onTabClick, currentPage }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <nav>
-            <ul className='nav-bar__menu'>
+            <Button className="hamburger" onClick={toggleMenu}>☰</Button>
+            <ul className={`nav-bar__menu ${isOpen ? `show` : ``}`}>
                 {tabs.map((tab, index) => (
                     <li key={index}>
                         <Button
