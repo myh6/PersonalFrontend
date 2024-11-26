@@ -10,7 +10,7 @@
     color: var(--text-dark-color);
     opacity: 0.4;
     font-size: var(--font-size-small);
-    font-family: var(--font-family-serif);
+    font-family: cursive;
     /* text-align: center; */
 }
 
@@ -25,11 +25,10 @@
 .content {
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
     justify-content: center;
     padding: 0 var(--spacing-large);
-    text-align: center;
-    padding-left: 20px;
 }
 
 .bottom-tag-html {
