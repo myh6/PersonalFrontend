@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import MainContent from './components/MainContent/MainContent';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [page, setPage] = useState('#home');
@@ -29,7 +30,7 @@ function App() {
         {(page === '#home') && <Home />}
         {(page === '#about') && <h2>About</h2>}
         {(page === '#projects') && <h2>Projects</h2>}
-        {(page === '#contact') && <h2>Contact</h2>}
+        {(page === '#contact') && <Contact/>}
       </MainContent>
       <Footer/>
     </>
