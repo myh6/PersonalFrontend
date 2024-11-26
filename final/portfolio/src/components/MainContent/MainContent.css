@@ -1,5 +1,5 @@
 .main-area {
-    min-height: 100vh;
+    min-height: 83vh;
     background-color: var(--background-color);
     position: relative;
     z-index: 1;

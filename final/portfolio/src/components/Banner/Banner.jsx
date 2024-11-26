@@ -14,7 +14,9 @@ function Banner() {
                     <h1 className='banner-text'>iOS DEVELOPER</h1>
                     <h1 className='banner-text'>NEU GRADUATE STUDENT</h1>
                 </HTMLDecorator>
-                <img src={Image} alt='self image'></img>
+                <div>
+                    <img src={Image} alt='self image'></img>
+                </div>
             </div>
         </>
     );
