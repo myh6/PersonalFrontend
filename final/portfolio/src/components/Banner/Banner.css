@@ -48,13 +48,14 @@ img {
 
 .banner-text {
     color: var(--text-color);
+    font-size: var(--font-size-xlarge);
 }
 
 .name {
     color: var(--accent-color);
     font-weight: bold;
     font-style: italic;
-    font-size: 50px;
+    font-size: var(--font-size-xxlarge);
 }
 
 img,
