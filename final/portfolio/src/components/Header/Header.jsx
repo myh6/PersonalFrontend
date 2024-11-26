@@ -4,7 +4,7 @@ import './Header.css';
 function Header({ children }) {
     return (
         <div className='header-content'>
-            <h1>MY.H</h1>
+            <h1 className='logo'>MY.H</h1>
             { children }
         </div>
     );
