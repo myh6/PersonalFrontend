@@ -1,4 +1,41 @@
 .main-area {
     min-height: 100vh;
     background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
+}
+
+.circle {
+    position: fixed;
+    z-index: 0;
+    border-radius: 50%;
+    opacity: 0.3;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    pointer-events: none;
+}
+
+.circle.one {
+    top: 10%;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.circle.two {
+    top: 20%;
+    right: 0%;
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+    animation-delay: 2s;
+}
+
+.circle.three {
+    bottom: 20%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    animation-delay: 4s;
 }
