@@ -44,6 +44,10 @@ Button {
     left: 0;
 }
 
+.nav-button.active {
+    color: var(--secondary-color);
+}
+
 .hamburger {
     display: none;
     background: none;

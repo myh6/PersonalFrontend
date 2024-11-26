@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header>
-        <NavBar tabs={tabs} onTabClick={handleTabClick}></NavBar>
+        <NavBar tabs={tabs} onTabClick={handleTabClick} currentPage={page}></NavBar>
       </Header>
       <MainContent>
         {(page === '#home') && <Home />}
