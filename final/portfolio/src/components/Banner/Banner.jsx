@@ -8,6 +8,9 @@ function Banner() {
     return (
         <>
             <div className='banner-container'>
+                <div className='circle one'></div>
+                <div className='circle two'></div>
+                <div className='circle three'></div>
                 <HTMLDecorator>
                     <h1 className='banner-text'>Hi. I'm</h1>
                     <h1 className='name banner-text'>Min-Yang Huang</h1>
