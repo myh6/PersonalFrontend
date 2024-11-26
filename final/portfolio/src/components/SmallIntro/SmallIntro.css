@@ -1,0 +1,10 @@
+.smallIntro-container {
+    padding: var(--spacing-large);
+
+}
+
+.smallIntro-container h2 {
+    text-align: center;
+    padding: var(--spacing-large) 0;
+    color: var(--accent-color);
+}
