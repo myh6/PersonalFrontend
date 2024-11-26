@@ -3,7 +3,7 @@
     flex-direction: row;
     padding: var(--spacing-medium);
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 img {
