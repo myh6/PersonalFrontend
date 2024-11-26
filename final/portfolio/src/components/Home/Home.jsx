@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className='home-container'>
         <Banner/>
-        <Quote/>
+        {/* <Quote/> */}
         <SmallIntro/>
         </div>
     );
