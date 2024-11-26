@@ -4,6 +4,7 @@
     padding: var(--spacing-medium);
     align-items: center;
     justify-content: space-around;
+    margin-top: var(--spacing-medium);
 }
 
 img {
