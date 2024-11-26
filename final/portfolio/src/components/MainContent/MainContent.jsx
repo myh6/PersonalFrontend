@@ -8,6 +8,7 @@ function MainContent({ children }) {
                 <div className='circle one'></div>
                 <div className='circle two'></div>
                 <div className='circle three'></div>
+                <div className='circle four'></div>
                 {children}
             </div>
         </>

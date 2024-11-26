@@ -27,7 +27,7 @@
     right: 0%;
     width: 200px;
     height: 200px;
-    opacity: 0.4;
+    opacity: 0.6;
     animation-delay: 2s;
 }
 
@@ -36,6 +36,15 @@
     left: 40%;
     width: 100px;
     height: 100px;
-    opacity: 0.8;
+    opacity: 0.4;
     animation-delay: 4s;
+}
+
+.circle.four {
+    bottom: 10%;
+    left: -10%;
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+    animation-delay: 1s;
 }
