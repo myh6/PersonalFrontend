@@ -8,7 +8,7 @@ function Banner() {
         <>
         <div className='banner-container'>
             <HTMLDecorator>
-                <h1>Hi</h1>
+                <h1>Hi. I'm Min-Yang Huang.</h1><br/>
             </HTMLDecorator>
             <img src={Image}></img>
         </div>
