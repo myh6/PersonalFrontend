@@ -9,10 +9,10 @@ function Banner() {
         <>
             <div className='banner-container'>
                 <HTMLDecorator>
-                    <h1 className='banner-text'>Hi. I'm</h1>
+                    <h1 className='banner-text'>HI. I'M</h1>
                     <h1 className='name banner-text'>Min-Yang Huang</h1>
-                    <h1 className='banner-text'>iOS Developer</h1>
-                    <h1 className='banner-text'>NEU Graduate Student</h1>
+                    <h1 className='banner-text'>iOS DEVELOPER</h1>
+                    <h1 className='banner-text'>NEU GRADUATE STUDENT</h1>
                 </HTMLDecorator>
                 <img src={Image}></img>
             </div>
