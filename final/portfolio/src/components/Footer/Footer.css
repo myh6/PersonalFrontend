@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-large);
+    background-color: var(--text-dark-color);
+}
+
+.footer-container h1 {
+    font-size: var(--font-size-small);
+    color: var(--white-color);
+    opacity: 0.5;
+}
