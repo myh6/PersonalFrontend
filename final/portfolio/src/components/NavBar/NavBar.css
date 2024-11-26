@@ -24,11 +24,6 @@ nav {
     background-color: var(--white-color);
 }
 
-.button.active {
-    color: var(--white-color);
-    background-color: var(--secondary-color);
-}
-
 Button {
     border: none;
 }

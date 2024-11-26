@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import './NavBar.css';
 import { useState } from 'react';
 
-function NavBar({ tabs, onTabClick, currentPage }) {
+function NavBar({ tabs, onTabClick }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -18,7 +18,7 @@ function NavBar({ tabs, onTabClick, currentPage }) {
                     <li key={index}>
                         <Button
                             onClick={() => onTabClick(tab)}
-                            className={`${currentPage === tab.hash ? 'active' : ''} ${"nav-button"}`}
+                            className="nav-button"
                         >
                             {tab.label}
                         </Button>
