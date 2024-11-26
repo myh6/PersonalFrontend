@@ -12,7 +12,8 @@ function App() {
   const tabs = [
     { hash: '#home', label: 'Home' },
     { hash: '#about', label: 'About' },
-    { hash: '#resume', label: 'Resume' },
+    { hash: '#projects', label: 'Projects' },
+    { hash: '#contact', label: 'Contact'},
   ];
 
   function handleTabClick(tab) {
@@ -27,7 +28,8 @@ function App() {
       <MainContent>
         {(page === '#home') && <Home />}
         {(page === '#about') && <h2>About</h2>}
-        {(page === '#resume') && <h2>Resume</h2>}
+        {(page === '#projects') && <h2>Projects</h2>}
+        {(page === '#contact') && <h2>Contact</h2>}
       </MainContent>
       <Footer/>
     </>
