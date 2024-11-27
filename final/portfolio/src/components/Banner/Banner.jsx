@@ -1,10 +1,14 @@
 import '../../BaseStyle.css';
-import Image from '../../assets/self.jpg';
+import LightImage from '../../assets/self.jpg';
+import DarkImage from '../../assets/pinkself.jpg';
 import HTMLDecorator from '../HTMLDecorator/HTMLDecorator';
 import './Banner.css';
-
+import { useTheme } from '../ThemeContext/ThemeContext';
 
 function Banner() {
+    const { theme } = useTheme();
+    const currentImage = theme === 'light' ? LightImage : DarkImage;
+
     return (
         <>
             <div className='banner-container'>
@@ -15,7 +19,7 @@ function Banner() {
                     <h1 className='banner-text'>NEU GRADUATE STUDENT</h1>
                 </HTMLDecorator>
                 <div>
-                    <img src={Image} alt='self image'></img>
+                    <img src={currentImage} alt='self image'></img>
                 </div>
             </div>
         </>
