@@ -7,10 +7,12 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import ThemeModal from './components/ThemeModal/ThemeModal';
+import ThemeForm from './components/ThemeForm/ThemeForm';
 
 function App() {
   const [page, setPage] = useState('#home');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
 
   const tabs = [
     { hash: '#home', label: 'Home' },
@@ -28,8 +30,9 @@ function App() {
     }
   }
 
-  function saveTheme() {
-    
+  function saveTheme(newTheme) {
+    setTheme(newTheme);
+    closeModal();
   }
 
   function closeModal() {
@@ -47,8 +50,8 @@ function App() {
         {(page === '#projects') && <h2>Projects</h2>}
         {(page === '#contact') && <Contact />}
         { isModalOpen && (
-        <ThemeModal onSave={saveTheme} onClose={closeModal}>
-          <h1>Hello</h1>
+        <ThemeModal onClose={closeModal}>
+          <ThemeForm initialTheme={theme} onSave={saveTheme} onCancel={closeModal}/>
         </ThemeModal>
         )
         }

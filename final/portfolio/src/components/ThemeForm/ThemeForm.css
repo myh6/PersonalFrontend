@@ -1,0 +1,20 @@
+.theme-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-medium);
+}
+.theme-input-container input {
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    padding: var(--spacing-medium);
+}

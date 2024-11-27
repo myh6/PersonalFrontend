@@ -1,9 +1,8 @@
 import '../../BaseStyle.css';
 import './ThemeModal.css';
-import Button from '../Button/Button';
 import { useRef, useEffect } from 'react';
 
-function ThemeModal({ children, onSave, onClose }) {
+function ThemeModal({ children, onClose }) {
     const dialogRef = useRef(null);
 
     useEffect(() => {
@@ -23,19 +22,10 @@ function ThemeModal({ children, onSave, onClose }) {
         }
     }, [onClose]);
 
-    function handleSave() {
-        onSave();
-        dialogRef.current.close();
-    }
-
     return (
-        <dialog ref={dialogRef} className='modal' close>
+        <dialog ref={dialogRef} className='modal'>
             <div className='modal-container'>
                 {children}
-                <div className='button-group'>
-                    <Button className="subscribe-form" type="submit" onClick={handleSave}>Save</Button>
-                    <Button className="cancel-modal" onClick={() => dialogRef.current.close()}>Cancel</Button>
-                </div>
             </div>
         </dialog>
     );
