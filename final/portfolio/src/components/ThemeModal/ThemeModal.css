@@ -1,6 +1,8 @@
 .modal {
     padding: 1rem;
     margin: auto;
+    background-color: var(--background-color);
+    border-color: var(--text-dark-color);
 }
 
 .modal::backdrop {

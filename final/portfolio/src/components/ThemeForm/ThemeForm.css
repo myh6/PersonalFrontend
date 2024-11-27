@@ -9,6 +9,11 @@
     align-items: center;
     padding: var(--spacing-medium);
 }
+
+.theme-input-container label {
+    color: var(--accent-color);
+}
+
 .theme-input-container input {
     flex: 1;
 }
@@ -16,5 +21,15 @@
 .button-group {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     padding: var(--spacing-medium);
+    gap: var(--spacing-small);
+}
+
+.button-group Button{
+    flex: 1;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-large);
 }
