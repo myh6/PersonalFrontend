@@ -1,0 +1,91 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+.form-container .interaction-block {
+    padding: var(--spacing-small);
+}
+
+.form-container .button-group {
+    padding-top: var(--spacing-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container label {
+    font-size: var(--font-size-medium);
+    color: var(--text-dark-color);
+    margin-bottom: var(--spacing-small);
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: var(--spacing-small);
+    font-size: var(--font-size-medium);
+    border: 1px solid var(--text-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container .message-input {
+    height: 200px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: var(--spacing-small);
+    font-size: var(--font-size-medium);
+    border: 1px solid var(--text-dark-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+.form-container button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: var(--font-size-medium);
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: var(--secondary-color);
+}
+
+.error-text {
+    color: var(--accent-color);
+    font-size: var(--font-size-small);
+}
+
+.input-error {
+    background-color: var(--accent-color) !important;
+    color: var(--white-color);
+}
+
+.success-message {
+    margin-left: var(--spacing-medium);
+    color: var(--secondary-color);
+    font-size: var(--font-size-medium);
+    /* display: inline-block; */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-container strong {
+    color: var(--accent-color);
+}
