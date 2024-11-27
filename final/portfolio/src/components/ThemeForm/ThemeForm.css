@@ -1,6 +1,7 @@
 .theme-toggle {
     display: flex;
     flex-direction: column;
+    padding: var(--spacing-medium);
 }
 
 .theme-input-container {
@@ -12,6 +13,7 @@
 
 .theme-input-container label {
     color: var(--accent-color);
+    font-size: var(--font-size-large);
 }
 
 .theme-input-container input {
@@ -21,7 +23,7 @@
 .button-group {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: var(--spacing-medium);
     gap: var(--spacing-small);
 }
@@ -31,5 +33,4 @@
     color: var(--white-color);
     background-color: var(--accent-color);
     border-radius: var(--border-radius);
-    padding: var(--spacing-large);
 }

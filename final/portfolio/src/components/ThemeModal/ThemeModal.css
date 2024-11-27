@@ -3,6 +3,7 @@
     margin: auto;
     background-color: var(--background-color);
     border-color: var(--text-dark-color);
+    border-radius: var(--border-radius);
 }
 
 .modal::backdrop {
