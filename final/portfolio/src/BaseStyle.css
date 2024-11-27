@@ -22,3 +22,23 @@
 
     --border-radius: 10px;
 }
+
+.app.light {
+    --primary-color: #d7cec7;
+    --secondary-color: #c09f80;
+    --accent-color: #76323f;
+    --background-color: var(--primary-color);
+    --text-color: #333;
+    --text-dark-color: #424640;
+    --white-color: white;
+}
+
+.app.dark {
+    --primary-color: #2d2d2d;
+    --secondary-color: #444444;
+    --accent-color: #bf5f82;
+    --background-color: var(--primary-color);
+    --text-color: #e0e0e0;
+    --text-dark-color: #c0c0c0;
+    --white-color: black;
+}

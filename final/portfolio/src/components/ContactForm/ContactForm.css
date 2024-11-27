@@ -36,6 +36,7 @@
 
 .form-container textarea {
     resize: vertical;
+    color: var(--text-color);
 }
 
 .form-container .message-input {
@@ -51,6 +52,7 @@ input {
     border-radius: var(--border-radius);
     background-color: var(--background-color);
     box-sizing: border-box;
+    color: var(--text-color);
 }
 
 .form-container button {
@@ -80,7 +82,7 @@ input {
 
 .success-message {
     margin-left: var(--spacing-medium);
-    color: var(--secondary-color);
+    color: var(--text-dark-color);
     font-size: var(--font-size-medium);
     /* display: inline-block; */
     animation: fadeIn 0.3s ease-in-out;

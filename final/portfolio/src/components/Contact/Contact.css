@@ -16,6 +16,7 @@
     padding: var(--spacing-large);
     font-size: clamp(2rem, 10vw, 10rem);
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    color: var(--text-color);
 }
 
 @media (max-width: 40rem) {

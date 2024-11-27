@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     padding: var(--spacing-large);
-    background-color: var(--text-dark-color);
+    background-color: var(--secondary-color);
 }
 
 .footer-container h1 {
     font-size: var(--font-size-small);
-    color: var(--white-color);
-    opacity: 0.5;
+    color: var(--accent-color);
+    /* opacity: 0.5; */
 }
