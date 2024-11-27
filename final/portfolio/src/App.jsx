@@ -45,7 +45,8 @@ function App() {
       <Header>
         <NavBar tabs={tabs} onTabClick={handleTabClick} currentPage={page}></NavBar>
       </Header>
-      <MainContent>
+      <a href='#main-content' className='skiplink'>Skip to main content</a>
+      <MainContent id="main-content">
         {(page === '#home') && <Home />}
         {(page === '#about') && <h2>About</h2>}
         {(page === '#projects') && <h2>Projects</h2>}
