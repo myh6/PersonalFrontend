@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTheme } from './components/ThemeContext/ThemeContext';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
@@ -12,7 +13,7 @@ import ThemeForm from './components/ThemeForm/ThemeForm';
 function App() {
   const [page, setPage] = useState('#home');
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const { theme, setTheme } = useTheme();
 
   const tabs = [
     { hash: '#home', label: 'Home' },
@@ -40,7 +41,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className={`app ${theme}`}>
       <Header>
         <NavBar tabs={tabs} onTabClick={handleTabClick} currentPage={page}></NavBar>
       </Header>
@@ -57,7 +58,7 @@ function App() {
         }
       </MainContent>
       <Footer />
-    </>
+    </div>
   )
 }
 
