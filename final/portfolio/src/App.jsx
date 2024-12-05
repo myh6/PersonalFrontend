@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import ThemeModal from './components/ThemeModal/ThemeModal';
 import ThemeForm from './components/ThemeForm/ThemeForm';
+import About from './components/About/About';
 
 function App() {
   const [page, setPage] = useState('#home');
@@ -47,7 +48,7 @@ function App() {
       <a href='#main-content' className='skiplink'>Skip to main content</a>
       <MainContent id="main-content">
         {(page === '#home') && <Home />}
-        {(page === '#about') && <h2>About</h2>}
+        {(page === '#about') && <About/>}
         {(page === '#contact') && <Contact />}
         { isModalOpen && (
         <ThemeModal onClose={closeModal}>
