@@ -18,7 +18,6 @@ function App() {
   const tabs = [
     { hash: '#home', label: 'Home' },
     { hash: '#about', label: 'About' },
-    { hash: '#projects', label: 'Projects' },
     { hash: '#contact', label: 'Contact' },
     { hash: '#setting', label: 'Setting' },
   ];
@@ -49,7 +48,6 @@ function App() {
       <MainContent id="main-content">
         {(page === '#home') && <Home />}
         {(page === '#about') && <h2>About</h2>}
-        {(page === '#projects') && <h2>Projects</h2>}
         {(page === '#contact') && <Contact />}
         { isModalOpen && (
         <ThemeModal onClose={closeModal}>
