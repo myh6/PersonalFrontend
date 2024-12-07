@@ -6,6 +6,7 @@ import Adaptive3Image from '../../assets/03.png';
 import BasicForm from '../../assets/04.png';
 import DottiePage from '../../assets/06.png';
 import JSForm from '../../assets/07.png';
+import ReactIntro from '../../assets/09.png';
 
 function CardCollection() {
     const cardCollectionData = [
@@ -33,6 +34,11 @@ function CardCollection() {
             title: '07-js-form',
             imageUrl: JSForm,
             description: 'Create Form element with checking logic in JavaScript',
+        },
+        {
+            title: '09-react-intro',
+            imageUrl: ReactIntro,
+            description: 'Create Inventory counter written in React (JavaScript)',
         },
         {
             title: '10-react-components',
