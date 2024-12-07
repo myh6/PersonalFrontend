@@ -12,3 +12,9 @@
   align-items: center;
   z-index: 1;
 }
+
+.about-container .project-title {
+  padding: var(--spacing-large);
+  margin: var(--spacing-large) 0;
+  font-size: var(--font-size-xlarge);
+}

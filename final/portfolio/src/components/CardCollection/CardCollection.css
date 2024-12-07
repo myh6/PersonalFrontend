@@ -1,0 +1,9 @@
+.card-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid */
+    gap: 1.5rem; /* Space between cards */
+    padding: 2rem; /* Add padding around the collection */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1200px; /* Optional for consistent layout */
+    margin: 0 auto; /* Center the collection */
+}
