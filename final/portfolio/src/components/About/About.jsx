@@ -3,8 +3,11 @@ import Timeline from '../Timeline/Timeline';
 import './About.css';
 
 function About() {
-    return (
+    return (        
+    <div className='about-container'>
+        <h1>About</h1>
         <Timeline/>
+    </div>
     );
 }
 

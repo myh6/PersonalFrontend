@@ -1,0 +1,14 @@
+.about-container h1 {
+  padding: var(--spacing-large);
+  margin: var(--spacing-large) 0;
+  font-size: var(--font-size-xxlarge);
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
