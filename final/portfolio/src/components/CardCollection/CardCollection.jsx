@@ -20,13 +20,8 @@ function CardCollection() {
         },
         {
             title: '04-basic-form',
-            imageUrl: BasicForm,
-            description: 'Creating basic form in JavaScript',
-        },
-        {
-            title: '06-js-intro',
-            imageUrl: DottiePage,
-            description: 'Creating Card element and Dropdown in JavaScript with eventListener',
+            imageUrl: 'https://via.placeholder.com/300',
+            description: 'Taipei, Taiwan - Mercuries Data System Ltd',
         },
         {
             title: '07-js-form',
