@@ -7,6 +7,7 @@ import BasicForm from '../../assets/04.png';
 import DottiePage from '../../assets/06.png';
 import JSForm from '../../assets/07.png';
 import ReactIntro from '../../assets/09.png';
+import FinalReact from '../../assets/10.png';
 
 function CardCollection() {
     const cardCollectionData = [
@@ -42,8 +43,8 @@ function CardCollection() {
         },
         {
             title: '10-react-components',
-            imageUrl: 'https://via.placeholder.com/300',
-            description: 'Taipei, Taiwan - Mercuries Data System Ltd',
+            imageUrl: FinalReact,
+            description: 'Create a single-page application that have several pages with elements such as banner, card.',
         },
     ];
 
