@@ -1,31 +1,34 @@
 import Card from "../Card/Card";
 import './CardCollection.css';
 
+import BasicLayou2Image from '../../assets/02.png';
+import Adaptive3Image from '../../assets/03.png';
+
 function CardCollection() {
     const cardCollectionData = [
         {
             title: '02-basic-layout',
-            imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
-            description: 'Boston, MA - National Internet Observatory',
+            imageUrl: BasicLayou2Image,
+            description: 'Practicing CSS and HTML',
         },
         {
             title: '03-responsive-grid',
-            imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
-            description: 'Taiwan (Hybrid) - SHL Medical',
+            imageUrl: Adaptive3Image,
+            description: 'Learn adaptive design and Card element',
         },
         {
             title: '04-basic-form',
-            imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
+            imageUrl: 'https://via.placeholder.com/300',
             description: 'Taipei, Taiwan - Mercuries Data System Ltd',
         },
         {
             title: '07-js-intro',
-            imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
+            imageUrl: 'https://via.placeholder.com/300',
             description: 'Taipei, Taiwan - Mercuries Data System Ltd',
         },
         {
             title: '10-react-components',
-            imageUrl: 'https://via.placeholder.com/300', // Replace with actual image URL
+            imageUrl: 'https://via.placeholder.com/300',
             description: 'Taipei, Taiwan - Mercuries Data System Ltd',
         },
     ];
