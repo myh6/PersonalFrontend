@@ -3,6 +3,7 @@ import './CardCollection.css';
 
 import BasicLayou2Image from '../../assets/02.png';
 import Adaptive3Image from '../../assets/03.png';
+import BasicForm from '../../assets/04.png';
 
 function CardCollection() {
     const cardCollectionData = [
@@ -18,8 +19,8 @@ function CardCollection() {
         },
         {
             title: '04-basic-form',
-            imageUrl: 'https://via.placeholder.com/300',
-            description: 'Taipei, Taiwan - Mercuries Data System Ltd',
+            imageUrl: BasicForm,
+            description: 'Creating basic form in JavaScript',
         },
         {
             title: '07-js-intro',
