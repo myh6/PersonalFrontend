@@ -28,11 +28,11 @@
 .card-content h3 {
     margin: 0 0 var(--spacing-medium);
     font-size: 1.2em;
-    color: #333;
+    color: var(--text-color);
 }
 
 .card-content p {
     margin: 0;
     font-size: 0.9em;
-    color: #666;
+    color: var(--text-dark-color);
 }

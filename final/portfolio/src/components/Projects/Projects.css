@@ -1,0 +1,22 @@
+.project-container h1 {
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) 0;
+    font-size: var(--font-size-xxlarge);
+    color: var(--text-color);
+  }
+  
+  .project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .project-container .project-title {
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) 0;
+    font-size: var(--font-size-xlarge);
+    color: var(--text-color);
+  }

@@ -10,6 +10,7 @@ import Contact from './components/Contact/Contact';
 import ThemeModal from './components/ThemeModal/ThemeModal';
 import ThemeForm from './components/ThemeForm/ThemeForm';
 import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const [page, setPage] = useState('#home');
@@ -19,6 +20,7 @@ function App() {
   const tabs = [
     { hash: '#home', label: 'Home' },
     { hash: '#about', label: 'About' },
+    { hash: '#projects', label: 'Projects'},
     { hash: '#contact', label: 'Contact' },
     { hash: '#setting', label: 'Setting' },
   ];
@@ -49,6 +51,7 @@ function App() {
       <MainContent id="main-content">
         {(page === '#home') && <Home />}
         {(page === '#about') && <About/>}
+        {(page === '#projects' && <Projects/>)}
         {(page === '#contact') && <Contact />}
         { isModalOpen && (
         <ThemeModal onClose={closeModal}>

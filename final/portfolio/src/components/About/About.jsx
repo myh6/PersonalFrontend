@@ -8,8 +8,6 @@ function About() {
     <div className='about-container'>
         <h1>About</h1>
         <Timeline/>
-        <h2 className='project-title'>Projects</h2>
-        <CardCollection></CardCollection>
     </div>
     );
 }
