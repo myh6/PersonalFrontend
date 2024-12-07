@@ -20,12 +20,17 @@ function CardCollection() {
         },
         {
             title: '04-basic-form',
-            imageUrl: 'https://via.placeholder.com/300',
-            description: 'Taipei, Taiwan - Mercuries Data System Ltd',
+            imageUrl: BasicForm,
+            description: 'Create form with checking logic in HTML',
+        },
+        {
+            title: '06-js-intro',
+            imageUrl: DottiePage,
+            description: 'Create Card element and DropDown menu in JavaScript with EventListener',
         },
         {
             title: '07-js-form',
-            imageUrl: 'https://via.placeholder.com/300',
+            imageUrl: DottiePage,
             description: 'Taipei, Taiwan - Mercuries Data System Ltd',
         },
         {
