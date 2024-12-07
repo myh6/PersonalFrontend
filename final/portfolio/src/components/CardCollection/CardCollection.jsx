@@ -5,6 +5,7 @@ import BasicLayou2Image from '../../assets/02.png';
 import Adaptive3Image from '../../assets/03.png';
 import BasicForm from '../../assets/04.png';
 import DottiePage from '../../assets/06.png';
+import JSForm from '../../assets/07.png';
 
 function CardCollection() {
     const cardCollectionData = [
@@ -30,8 +31,8 @@ function CardCollection() {
         },
         {
             title: '07-js-form',
-            imageUrl: DottiePage,
-            description: 'Taipei, Taiwan - Mercuries Data System Ltd',
+            imageUrl: JSForm,
+            description: 'Create Form element with checking logic in JavaScript',
         },
         {
             title: '10-react-components',
