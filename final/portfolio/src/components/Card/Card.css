@@ -11,7 +11,8 @@
     justify-content: space-between;
 }
 
-.card:hover {
+.card:hover,
+.card:focus-within {
     transform: scale(1.03);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -36,4 +37,18 @@
     margin: 0;
     font-size: 0.9em;
     color: var(--text-dark-color);
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-code-link {
+    padding: var(--spacing-small) var(--spacing-large) var(--spacing-large);
+    font-size: 0.85em;
+    color: var(--accent-color);
 }

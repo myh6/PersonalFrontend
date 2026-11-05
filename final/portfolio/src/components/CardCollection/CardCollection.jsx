@@ -9,10 +9,16 @@ import JSForm from '../../assets/07.png';
 import ReactIntro from '../../assets/09.png';
 import FinalReact from '../../assets/10.png';
 
+const REPO_WORK_URL = 'https://github.com/myh6/PersonalFrontend/tree/main/work';
+
+// Running copies of each homework, made by `npm run demos` (see scripts/build-demos.sh).
+const DEMOS_URL = '/demos';
+
 function CardCollection() {
     const cardCollectionData = [
         {
             title: '02-basic-layout',
+            page: 'homepage.html',
             imageUrl: BasicLayou2Image,
             description: 'Practicing CSS and HTML',
         },
@@ -53,6 +59,8 @@ function CardCollection() {
             {cardCollectionData.map((item, index) => (
                 <Card
                     key={index}
+                    demoUrl={`${DEMOS_URL}/${item.title}/${item.page ?? 'index.html'}`}
+                    codeUrl={`${REPO_WORK_URL}/${item.title}`}
                     imageUrl={item.imageUrl}
                     title={item.title}
                     description={item.description}
