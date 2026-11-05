@@ -1,0 +1,76 @@
+:root {
+    --theme-color-dark: #493628;
+    --theme-color-primary: #AB886D;
+    --theme-color-secondary: #D6C0B3;
+    --theme-color-light: #E4E0E1;
+    --theme-color-red: #911F27;
+    --horizontal-pading: 18px;
+    --top-margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/* Header*/
+header {
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-light);
+    padding: var(--horizontal-pading);
+}
+
+.title-prompt {
+    padding: var(--horizontal-pading);
+}
+
+.required-note {
+    color: var(--theme-color-red);
+}
+
+/* Form*/
+form {
+    padding: var(--horizontal-pading);
+}
+
+.form-section {
+    margin-bottom: var(--top-margin);
+}
+
+.form-section-checkbox {
+    margin-bottom: var(--top-margin);
+}
+
+.error__text div {
+    padding: var(--horizontal-pading);
+    margin-top: var(--top-margin);
+    background-color: var(--theme-color-secondary);
+    color: var(--theme-color-red);
+    border: 1px solid var(--theme-color-red);
+}
+
+button {
+    padding: var(--horizontal-pading) 20px;
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-secondary);
+}
+
+/* Footer*/
+footer {
+    background-color: var(--theme-color-dark);
+    color: var(--theme-color-light);
+    padding: var(--horizontal-pading);
+}
+
+/* Media*/
+@media (max-width: 40rem) {
+    .form-section {
+        display: flex;
+        flex-direction: column;
+    }
+}

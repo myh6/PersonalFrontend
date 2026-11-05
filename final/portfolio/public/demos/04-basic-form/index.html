@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Website Title</h1>
+        </header>
+        <main>
+            <h2 class="form-note"><span aria-hidden="true" class="required-note">*</span> is required to fill in.</h2>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Registration</legend>
+
+                    <div class="interaction-block">
+                        <label for="name">Name <span aria-hidden="true" class="required-note">*</span></label>
+                        <input id="name" name="name" required><br>
+                    </div>
+
+                    <div class="interaction-block">
+                        <label for="email">Email <span aria-hidden="true" class="required-note">*</span></label>
+                        <input id="email" name="email" required><br>
+                    </div>
+
+                    <div class="annoy-block">
+                        <label for="annoy-me">Do you want us to send you annoying emails?</label>
+                        <input type="checkbox" id="annoy-me" name="annoy-me" checked><br>
+                    </div>
+
+                    <div class="interaction-block">
+                        <label for="tier">Select tier  <span aria-hidden="true" class="required-note">*</span></label>
+                        <select id="tier" name="tier" required>
+                            <option value="">Please select</option>
+                            <option value="1">Silver Tier</option>
+                            <option value="2">Gold Tier</option>
+                            <option value="3">Platinum Tier</option>
+                        </select><br>
+                    </div>
+                    
+                    <button type="submit">Register</button>
+                    
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <a href="#">privacy policy</a>
+        </footer>
+    </body>
+</html>
